@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 
+//Clase que crea el formulario para crear nuevos usuarios
 export default class createUser extends Component {
 
     state = {

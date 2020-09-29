@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
+//Clase que 
 export default class navigation extends Component {
     render() {
         return (

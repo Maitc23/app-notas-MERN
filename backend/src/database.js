@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-//Pasando la conexion a la BD
+//Pasando datos de la conexion de BD
 const URI = process.env.MONGOBD_URI 
     ? process.env.MONGOBD_URI 
     : 'mongodb://localhost/databasetest';

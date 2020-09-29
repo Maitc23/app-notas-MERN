@@ -1,6 +1,6 @@
 const {Schema, model} = require('mongoose');
 
-
+//Modelo para usuario en la BD
 const userSchema = new Schema({
     username: { 
         type: String, 
