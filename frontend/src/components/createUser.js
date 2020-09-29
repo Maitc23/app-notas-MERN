@@ -9,7 +9,7 @@ export default class createUser extends Component {
     }
 
     getUsers = async () => {
-        const res = await axios.get('http://localhost:4000/api/users');
+        const res = await axios.get('https://app-b7448b98-af44-4d94-ae4a-f7646a34b9d6.cleverapps.io/api/users');
         this.setState({ users: res.data });
     }
     async componentDidMount() {
@@ -25,7 +25,7 @@ export default class createUser extends Component {
 
     onSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:4000/api/users', {
+        await axios.post('https://app-b7448b98-af44-4d94-ae4a-f7646a34b9d6.cleverapps.io/api/users', {
             username: this.state.username
         });
         this.setState({ username: '' });
@@ -33,7 +33,7 @@ export default class createUser extends Component {
     }
 
     deleteUser = async (id) => {
-        await axios.delete('http://localhost:4000/api/users/' + id)
+        await axios.delete('https://app-b7448b98-af44-4d94-ae4a-f7646a34b9d6.cleverapps.io/api/users/' + id)
         this.getUsers();
     }
 

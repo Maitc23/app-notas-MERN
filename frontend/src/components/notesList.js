@@ -9,7 +9,7 @@ export default class notesList extends Component {
         notes: []
     }
     async getNotes() {
-        const res = await axios.get('http://localhost:4000/api/notes')
+        const res = await axios.get('https://app-b7448b98-af44-4d94-ae4a-f7646a34b9d6.cleverapps.io/api/notes')
         this.setState({ notes: res.data })
     }
     componentDidMount() {
@@ -20,7 +20,7 @@ export default class notesList extends Component {
 
 
     deleteNote = async (id) => {
-        await axios.delete('http://localhost:4000/api/notes/' + id);
+        await axios.delete('https://app-b7448b98-af44-4d94-ae4a-f7646a34b9d6.cleverapps.io/api/notes/' + id);
         this.getNotes();
     }
 
